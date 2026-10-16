@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Interest Tracker",
+  "version": "2.0.0",
+  "description": "Private, opt-in interest classification and content discovery recommendations.",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.openai.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "action": {
+    "default_title": "Interest Tracker",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}
